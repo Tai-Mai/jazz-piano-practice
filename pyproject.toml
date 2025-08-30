@@ -1,0 +1,9 @@
+[project]
+name = "jazz-piano-practice"
+version = "0.1.0"
+description = "Some dumb little scripts I wrote to help me practice jazz piano"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "piper-tts>=1.3.0",
+]
