@@ -15,6 +15,11 @@ The script has two use cases at the moment:
 1. Generate random chromatic chords
 2. Generate random chords from a specific key/scale/mode
 
+For the TTS library, I chose [`piper-tts`](https://github.com/OHF-Voice/piper1-gpl)
+because it sounds good enough, it's light-weight and actively developed
+(unlike Coqui TTS) and it's offline, free and thus not susceptible to API rate limits
+(unlike Google TTS and other AI-based cloud-hosted solutions).
+
 ### Setup
 
 1. Clone this repo
