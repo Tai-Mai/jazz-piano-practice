@@ -23,10 +23,10 @@ because it sounds good enough, it's light-weight and actively developed
 ### Setup
 
 1. Clone this repo
-2. Download a TTS voice to the repo's root by following [`piper-tts`'s Python API](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md). I recommend `en_US-hfc_female-medium`:
+2. Download a TTS voice to the repo's root by following [`piper-tts`'s Python API](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md). I recommend `en_US-hfc_male-medium`:
 
    ```bash
-   uv run -m piper.download_voices en_US-hfc_female-medium
+   uv run -m piper.download_voices en_US-hfc_male-medium
    ```
 
    or if you don't use `uv` (you should), optionally set up a virtual
@@ -34,7 +34,7 @@ because it sounds good enough, it's light-weight and actively developed
 
    ```bash
    pip install piper-tts
-   python3 -m piper.download_voices en_US-hfc_female-medium
+   python3 -m piper.download_voices en_US-hfc_male-medium
    ```
 
 ### Usage

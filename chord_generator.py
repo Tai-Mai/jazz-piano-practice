@@ -170,7 +170,7 @@ def get_chord_quality_of_scale_degree(scale_degree: int, mode: Mode = Mode.ionia
 
 
 def tts(message: str) -> None:
-    voice = PiperVoice.load("./en_US-hfc_female-medium.onnx")
+    voice = PiperVoice.load("./en_US-hfc_male-medium.onnx")
     with wave.open(filename := "temp.wav", "wb") as wav_file:
         voice.synthesize_wav(message, wav_file)
 
@@ -182,12 +182,12 @@ def pronounce_chord(chord: str) -> None:
         chord.replace("A", "A-")
         .replace("#", " sharp")
         .replace("b", " flat")
-        .replace("min", " minor")
-        .replace("maj", " major")
-        .replace("dim", " diminished")
+        .replace("min7", " minor")
+        .replace("maj7", " major")
+        .replace("dim7", " diminished")
         .replace("m7 flat5", " half-diminished")
         .replace("aug", " augmented")
-        .replace("7", " seven")
+        .replace("7", " dominant")
     )
     tts(chord_pronouncable)
 
